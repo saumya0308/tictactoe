@@ -1,0 +1,172 @@
+body {
+  background: #40E0D0;
+  color: white;
+  font-family: 'Concert One', cursive;
+  text-align: center;
+}
+
+#board {
+  background: white;
+  height: 300px;
+  width: 300px;
+
+  box-shadow: 8px 12px 25px 6px rgba(0, 0, 0, 0.55);
+}
+
+#menu {
+  height: 300px;
+  width: 350px;
+}
+
+.button {
+  border: 5px solid transparent;
+  line-height: 1.5;
+  font-size: 20pt;
+}
+
+.button:hover {
+  border: 5px solid;
+}
+
+#thinking {
+  z-index: 2;
+  height: 90px;
+  width: 90px;
+}
+
+#spinner {
+  top: 60%;
+  height: 50px;
+  width: 50px;
+
+  border-radius: 50%;
+  border: 10px solid white;
+  border-bottom: 10px solid transparent;
+  animation: spin 1.2s linear infinite;
+  transform-origin: top left;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg) translate(-50%, -50%);
+  }
+
+  100% {
+      transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
+
+#message {
+  position: relative;
+  top: -20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#boardMenu {
+  position: relative;
+  top: 300px;
+}
+
+#splash {
+  font-size: 42pt;
+}
+
+table {
+  font-size: 28pt;
+  overflow-y: auto;
+  max-height: 50vh;
+  max-width: 50vw;
+}
+
+td {
+  padding: 0.5rem 1rem;
+}
+
+tbody>tr:nth-child(odd) {
+  background-color: #8fddd4;
+}
+
+.space {
+  background: #40E0D0;
+  height: 90px;
+  width: 90px;
+  position: absolute;
+
+  font-family: 'Boogaloo', cursive;
+  font-size: 55pt;
+}
+
+#githubLogo:hover,
+.space:hover,
+.button:hover {
+  cursor: pointer;
+}
+
+.d-none {
+  display: none;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.highlight {
+  color: black;
+}
+
+#streak {
+  float: left;
+}
+
+#topScore {
+  float: right;
+}
+
+#scores {
+  width: 350px;
+  margin: 300px auto 0;
+}
+
+#scores {
+  margin-top: 0px;
+}
+
+#name {
+  font-size: 18pt;
+  width: 150px;
+  background-color: #40E0D0;
+  color: white;
+  border: 5px solid white;
+}
+
+#name:focus {
+  outline: none;
+}
+
+.c1 {
+  left: 5px;
+}
+
+.c2 {
+  left: 105px;
+}
+
+.c3 {
+  left: 205px;
+}
+
+.r1 {
+  top: 5px;
+}
+
+.r2 {
+  top: 105px;
+}
+
+.r3 {
+  top: 205px;
+}
