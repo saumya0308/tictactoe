@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JMHeartley">
+    <meta name="description" content="Play the classic game with against the CPU or with a friend.">
+    <meta name="keywords" content="tic-tac-toe, dreamlo, dreamlo leaderboard, Javascript leaderboard, HTML leaderboard">
+    <title>Tic-Tac-Toe!</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Concert+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Boogaloo">
+</head>
+
+<body>
+    <div id="scores">
+        <span id="streak">STREAK: 0</span>
+        <span id="topScore">TOP: <i>checking</i></span>
+    </div>
+    <div id="splash" class="center d-none">Let's Play Some <br> Tic-Tac-Toe!</div>
+    <div id="menu" class="center d-none">
+        <h2>Choose a game type:</h2>
+        <p class="button" id="playerVsCPU">Player vs CPU</p>
+        <p class="button" id="playerVsPlayer">Player vs Player</p>
+        <p class="button" id="viewLeaderboard">View Leaderboard</p>
+    </div>
+    <div id="board" class="center d-none">
+        <h1 id="message"></h1>
+        <div id="thinking" class="center d-none text-center">
+            <span>Thinking...</span>
+            <div id="spinner" class="center"></div>
+        </div>
+        <div class="space c1 r1"></div>
+        <div class="space c2 r1"></div>
+        <div class="space c3 r1"></div>
+        <div class="space c1 r2"></div>
+        <div class="space c2 r2"></div>
+        <div class="space c3 r2"></div>
+        <div class="space c1 r3"></div>
+        <div class="space c2 r3"></div>
+        <div class="space c3 r3"></div>
+        <div id="boardMenu">
+            <p id="playAgain" class="button">Play again?</p>
+            <p class="backToMenu button">Back to menu</p>
+        </div>
+    </div>
+    <div id="nameInput" class="center d-none">
+        <h2 id="nameInputMessage"></h2>
+        <input type="text" id="name">
+        <span id="submit" class="button">Submit</span>
+        <p class="backToMenu button">Back to menu</p>
+    </div>
+    <div id="leaderboard" class="center d-none">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Wins</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div class="backToMenu button">Back to menu</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dreamlo.js@1.3.0/dist/dreamlo.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
